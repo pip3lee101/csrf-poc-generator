@@ -61,6 +61,7 @@ function generateForm(requirements, parameters, parametersKey, parametersValue) 
 	}
 	form += "\t\t\t<input type=\"submit\" value=\"Submit\">\n";
 	form += "\t\t</form>\n";
+	form += "\t\t<img src=\"" + requirements.host + requirements.uri + "\" onerror=\"document.forms[0].submit();\">\n";
 	form += "\t</body>\n";
 	form += "<html>\n";
 	
